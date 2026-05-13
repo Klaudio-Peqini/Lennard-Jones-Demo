@@ -1,0 +1,15 @@
+# HTCondor submit file for the Python/NumPy demo.
+# Submit from the package root with: condor_submit scripts/htcondor_python.sub
+
+universe   = vanilla
+executable = scripts/run_python_demo.sh
+arguments  =
+log        = results/condor_python.log
+output     = results/condor_python.$(Cluster).$(Process).out
+error      = results/condor_python.$(Cluster).$(Process).err
+
+request_cpus   = 1
+request_memory = 4 GB
+request_disk   = 2 GB
+
+queue 1

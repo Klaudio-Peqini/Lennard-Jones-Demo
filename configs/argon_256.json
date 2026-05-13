@@ -1,0 +1,19 @@
+{
+  "case_name": "argon_like_lennard_jones_256",
+  "description": "Teaching case for computational chemistry and HPC: Lennard-Jones molecular dynamics in reduced units.",
+  "units": "reduced LJ units: sigma = epsilon = mass = k_B = 1",
+  "n_particles": 256,
+  "density_reduced": 0.8442,
+  "temperature_reduced": 0.728,
+  "time_step_reduced": 0.005,
+  "steps": 1000,
+  "cutoff_reduced": 2.5,
+  "sample_every": 10,
+  "trajectory_every": 100,
+  "seed": 12345,
+  "notes": [
+    "This state point is commonly used as a liquid-like Lennard-Jones benchmark.",
+    "For a live seminar, start with N=108 or N=256 and 500-1000 steps.",
+    "For HPC scaling, increase N to 512, 1024, or 2048 and compare C++ OpenMP thread counts."
+  ]
+}

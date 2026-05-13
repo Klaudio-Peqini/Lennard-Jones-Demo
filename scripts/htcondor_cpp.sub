@@ -1,0 +1,19 @@
+# HTCondor submit file for the C++/OpenMP demo.
+# Submit from the package root with: condor_submit scripts/htcondor_cpp.sub
+
+universe   = vanilla
+executable = scripts/run_cpp_demo.sh
+arguments  =
+log        = results/condor_cpp.log
+output     = results/condor_cpp.$(Cluster).$(Process).out
+error      = results/condor_cpp.$(Cluster).$(Process).err
+
+# Request resources; adjust to your cluster policy.
+request_cpus   = 8
+request_memory = 4 GB
+request_disk   = 2 GB
+
+# Pass the thread count to OpenMP.
+environment = "OMP_NUM_THREADS=8"
+
+queue 1
