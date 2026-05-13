@@ -6,15 +6,15 @@ This package is a compact seminar demonstration for a chemistry department on ho
 
 The model is a monoatomic argon-like fluid described by the Lennard-Jones potential
 
-\[
+$$
 U(r)=4\varepsilon\left[\left(\frac{\sigma}{r}\right)^{12}-\left(\frac{\sigma}{r}\right)^6\right].
-\]
+$$
 
 The simulation uses reduced Lennard-Jones units:
 
-\[
+$$
 \sigma=\varepsilon=m=k_B=1.
-\]
+$$
 
 The default state point is liquid-like:
 
