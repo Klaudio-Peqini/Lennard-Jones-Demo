@@ -1,4 +1,4 @@
-# HPC Computational Chemistry Demo: Lennard-Jones Molecular Dynamics                                         
+# HPC Computational Chemistry Demo: Lennard-Jones Molecular Dynamics                                          
 
 This package is a compact seminar demonstration for a chemistry department on how an HPC cluster can be used for molecular simulation. It contains the same physical model implemented in **Python/NumPy** and **C++/OpenMP**, plus plotting, benchmarking, and HTCondor submission scripts.
 
